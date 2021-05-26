@@ -1,0 +1,25 @@
+.navdots {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-right: 30px;
+	z-index:9;
+}
+
+.navdots ul {
+	list-style:none;
+}
+
+.navdots ul li {
+	display:block;
+}
+
+.navdots li a {
+	background-color: #ccc;
+	border-radius: 50%;
+	display:block;
+	width: 10px;
+	height: 10px;
+	margin-bottom: 30px;
+}

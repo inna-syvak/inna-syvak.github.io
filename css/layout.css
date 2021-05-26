@@ -1,0 +1,189 @@
+/* Нормалізація */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* END of Нормалізація */
+
+html, body {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Serif', serif;
+    letter-spacing: .01em;
+}
+
+/* Ієрархія заголовків 1,2,3 рівнів  */
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: .2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: .25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+header, section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+nav, header, section {
+    padding: 25px; /* Мінімальні внутрішні відступи для smartphone */
+}
+
+.container-fluid,
+.container {
+    margin: 0 auto; /* Центрування по-горизонталі */
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    background-size: cover ;
+    background-repeat: no-repeat; ;
+    background-position: center;
+}
+
+#s1 {
+    background-image: url("../img/page02.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: center top;
+    position: relative;
+    z-index:10;
+}
+
+#s2 {
+    background-image: url("../img/page03.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+    position: relative;
+    z-index:10;
+}
+
+#s3 {
+    background-image: url("../img/page04.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+    position: relative;
+    z-index:10;
+}
+
+#s4 {
+    background-image: url("../img/page05.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+}
+
+#s5 {
+    background-color: #888;
+    background-image: url("../img/page06.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+}
+
+#s6 {
+    background-color: #888;
+    background-image: url("../img/page09.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+}
+
+#s7 {
+    background-color: #888;
+    background-image: url("../img/page07.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+}
+
+#s8 {
+    background-color: #888;
+    background-image: url("../img/page08.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+}
+
+#s9 {
+    background-color: #888;
+    background-image: url("../img/page10.jpg"), linear-gradient(to bottom, rgba(150,150,150, .5), rgba(50,50,50, .6));: 
+    background-position: left top;
+}
+
+.container {
+    max-width: 1280px; /* Обмеження ширини контенту всередині секцій */
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10vh;
+}
+
+.box-col {
+    width: 50%;
+    max-width: 450px;
+}
+
+.txt {
+    background-color: rgba(10,10,10, .8);
+    padding: 2em;
+    font-size: 1rem;
+    line-height: 180%;
+}
+
+@media screen and (max-width: 767px) {
+
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 1.5rem; }
+}
+
+@media screen and (max-width: 580px) {
+
+    h1 { font-size: 2.5rem; text-align: center; }
+    h2 { font-size: 2rem; text-align: center; }
+    h3 { font-size: 1.25rem; text-align: center; }
+
+    .container {
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    header .container {
+        justify-content: center;
+        padding-bottom: 10vh;
+    } 
+
+    .box-col {
+        width: 100%;
+        max-width: 450px;
+        order: 1;
+    }
+
+    .txt {
+        padding: 1.25em;
+    }
+
+    .first {
+        order: 0;
+        margin-top: 5em;
+    }
+
+    #s4 {
+    background-position: left top;
+    }
+
+    #s2 {
+    background-position: left top;
+    }
+}
